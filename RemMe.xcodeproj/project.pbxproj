@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E287D9D944EFAC32913146C /* Pods_RemMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7AA212B8A28AC95E4B0DA /* Pods_RemMe.framework */; };
 		44091AAD1D6B64D50010EE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44091AAC1D6B64D50010EE4B /* AppDelegate.swift */; };
 		44091AAF1D6B64D50010EE4B /* RMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44091AAE1D6B64D50010EE4B /* RMMainViewController.swift */; };
-		44091AB21D6B64D50010EE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB01D6B64D50010EE4B /* Main.storyboard */; };
 		44091AB41D6B64D50010EE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB31D6B64D50010EE4B /* Assets.xcassets */; };
 		44091AB71D6B64D50010EE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB51D6B64D50010EE4B /* LaunchScreen.storyboard */; };
+		4470ABFE1D6CA92600E120E0 /* RMFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470ABFD1D6CA92600E120E0 /* RMFilmsViewController.swift */; };
+		4470AC021D6CA97500E120E0 /* RMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470AC011D6CA97500E120E0 /* RMTableView.swift */; };
+		4470AC051D6CA9A900E120E0 /* RMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470AC041D6CA9A900E120E0 /* RMTableViewCell.swift */; };
 		448B441F1D6C8BA2001E2168 /* RMTVSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */; };
 		448B44211D6C8CDA001E2168 /* RMSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B44201D6C8CDA001E2168 /* RMSong.swift */; };
 		448B44231D6C8D06001E2168 /* RMFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B44221D6C8D06001E2168 /* RMFilm.swift */; };
@@ -24,32 +27,41 @@
 		449D99291D6B6A720066679C /* RMMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D99281D6B6A720066679C /* RMMainCollectionViewCell.swift */; };
 		449D992B1D6B6C040066679C /* RMCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D992A1D6B6C040066679C /* RMCollectionView.swift */; };
 		449D992D1D6B6C390066679C /* RMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D992C1D6B6C390066679C /* RMLabel.swift */; };
+		44B5E33F1D6CEB9700747174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B5E33E1D6CEB9700747174 /* Main.storyboard */; };
+		44CA79071D6CEA4400C028F2 /* Films.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA79061D6CEA4400C028F2 /* Films.storyboard */; };
 		77B1995522A04A5C5A9E4CE8 /* Pods_RemTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0DC2FF30AA34C31E29E585 /* Pods_RemTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AF7AA212B8A28AC95E4B0DA /* Pods_RemMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0DC2FF30AA34C31E29E585 /* Pods_RemTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C75AB77F482F750DCB4F3A5 /* Pods-RemMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemMe/Pods-RemMe.debug.xcconfig"; sourceTree = "<group>"; };
 		44091AA91D6B64D50010EE4B /* RemMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		44091AAC1D6B64D50010EE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44091AAE1D6B64D50010EE4B /* RMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMMainViewController.swift; sourceTree = "<group>"; };
-		44091AB11D6B64D50010EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		44091AB31D6B64D50010EE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44091AAC1D6B64D50010EE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Misc/AppDelegate.swift; sourceTree = "<group>"; };
+		44091AAE1D6B64D50010EE4B /* RMMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMMainViewController.swift; path = Main/Controller/RMMainViewController.swift; sourceTree = "<group>"; };
+		44091AB31D6B64D50010EE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
 		44091AB61D6B64D50010EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		44091AB81D6B64D50010EE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTVSerie.swift; sourceTree = "<group>"; };
-		448B44201D6C8CDA001E2168 /* RMSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSong.swift; sourceTree = "<group>"; };
-		448B44221D6C8D06001E2168 /* RMFilm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMFilm.swift; sourceTree = "<group>"; };
-		448B44241D6C8D1E001E2168 /* RMBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMBook.swift; sourceTree = "<group>"; };
-		449D991B1D6B68510066679C /* RMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMViewController.swift; sourceTree = "<group>"; };
-		449D991D1D6B68640066679C /* RMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMNavigationController.swift; sourceTree = "<group>"; };
-		449D99211D6B68CA0066679C /* RMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMColor.h; sourceTree = "<group>"; };
-		449D99221D6B68EF0066679C /* RMColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMColor.swift; sourceTree = "<group>"; };
-		449D99241D6B69840066679C /* RMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMImageView.swift; sourceTree = "<group>"; };
-		449D99261D6B6A630066679C /* RMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCollectionViewCell.swift; sourceTree = "<group>"; };
-		449D99281D6B6A720066679C /* RMMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMMainCollectionViewCell.swift; sourceTree = "<group>"; };
-		449D992A1D6B6C040066679C /* RMCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCollectionView.swift; sourceTree = "<group>"; };
-		449D992C1D6B6C390066679C /* RMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMLabel.swift; sourceTree = "<group>"; };
+		44091AB81D6B64D50010EE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Misc/Info.plist; sourceTree = "<group>"; };
+		4470ABFD1D6CA92600E120E0 /* RMFilmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMFilmsViewController.swift; path = Films/Controller/RMFilmsViewController.swift; sourceTree = "<group>"; };
+		4470AC011D6CA97500E120E0 /* RMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTableView.swift; path = Subclasses/RMTableView.swift; sourceTree = "<group>"; };
+		4470AC041D6CA9A900E120E0 /* RMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTableViewCell.swift; path = Subclasses/RMTableViewCell.swift; sourceTree = "<group>"; };
+		448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTVSerie.swift; path = Model/RMTVSerie.swift; sourceTree = "<group>"; };
+		448B44201D6C8CDA001E2168 /* RMSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMSong.swift; path = Model/RMSong.swift; sourceTree = "<group>"; };
+		448B44221D6C8D06001E2168 /* RMFilm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMFilm.swift; path = Model/RMFilm.swift; sourceTree = "<group>"; };
+		448B44241D6C8D1E001E2168 /* RMBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMBook.swift; path = Model/RMBook.swift; sourceTree = "<group>"; };
+		449D991B1D6B68510066679C /* RMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMViewController.swift; path = Subclasses/RMViewController.swift; sourceTree = "<group>"; };
+		449D991D1D6B68640066679C /* RMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNavigationController.swift; path = Subclasses/RMNavigationController.swift; sourceTree = "<group>"; };
+		449D99211D6B68CA0066679C /* RMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RMColor.h; path = Assets/RMColor.h; sourceTree = "<group>"; };
+		449D99221D6B68EF0066679C /* RMColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMColor.swift; path = Subclasses/RMColor.swift; sourceTree = "<group>"; };
+		449D99241D6B69840066679C /* RMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMImageView.swift; path = Subclasses/RMImageView.swift; sourceTree = "<group>"; };
+		449D99261D6B6A630066679C /* RMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMCollectionViewCell.swift; path = Subclasses/RMCollectionViewCell.swift; sourceTree = "<group>"; };
+		449D99281D6B6A720066679C /* RMMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMMainCollectionViewCell.swift; path = Main/Subclasses/RMMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		449D992A1D6B6C040066679C /* RMCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMCollectionView.swift; path = Subclasses/RMCollectionView.swift; sourceTree = "<group>"; };
+		449D992C1D6B6C390066679C /* RMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMLabel.swift; path = Subclasses/RMLabel.swift; sourceTree = "<group>"; };
+		44B5E33E1D6CEB9700747174 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Main/Views/Main.storyboard; sourceTree = "<group>"; };
+		44CA79061D6CEA4400C028F2 /* Films.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Films.storyboard; path = Films/View/Films.storyboard; sourceTree = "<group>"; };
 		9578B7673DE64E1E0AFF085D /* Pods-RemTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemTV/Pods-RemTV.debug.xcconfig"; sourceTree = "<group>"; };
+		C0CC7634770F17D9C332FE08 /* Pods-RemMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemMe/Pods-RemMe.release.xcconfig"; sourceTree = "<group>"; };
 		C2B9636E8207D048CCD382D5 /* Pods-RemTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemTV/Pods-RemTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B1995522A04A5C5A9E4CE8 /* Pods_RemTV.framework in Frameworks */,
+				2E287D9D944EFAC32913146C /* Pods_RemMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,8 @@
 			children = (
 				9578B7673DE64E1E0AFF085D /* Pods-RemTV.debug.xcconfig */,
 				C2B9636E8207D048CCD382D5 /* Pods-RemTV.release.xcconfig */,
+				3C75AB77F482F750DCB4F3A5 /* Pods-RemMe.debug.xcconfig */,
+				C0CC7634770F17D9C332FE08 /* Pods-RemMe.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,12 +113,38 @@
 				448B441D1D6C8B86001E2168 /* Model */,
 				449D99181D6B682C0066679C /* Subclasses */,
 				449D99171D6B67FE0066679C /* Main */,
+				4470ABFF1D6CA93100E120E0 /* Films */,
 				449D99201D6B68940066679C /* Misc */,
 				449D991F1D6B688B0066679C /* Assets */,
 			);
 			path = RemMe;
 			sourceTree = "<group>";
 			usesTabs = 1;
+		};
+		4470ABFF1D6CA93100E120E0 /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				44CA79051D6CEA1A00C028F2 /* View */,
+				4470AC031D6CA99100E120E0 /* Subclasses */,
+				4470AC001D6CA93C00E120E0 /* Controller */,
+			);
+			name = Films;
+			sourceTree = "<group>";
+		};
+		4470AC001D6CA93C00E120E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4470ABFD1D6CA92600E120E0 /* RMFilmsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4470AC031D6CA99100E120E0 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
 		};
 		448B441D1D6C8B86001E2168 /* Model */ = {
 			isa = PBXGroup;
@@ -136,6 +177,8 @@
 				449D99261D6B6A630066679C /* RMCollectionViewCell.swift */,
 				449D992A1D6B6C040066679C /* RMCollectionView.swift */,
 				449D992C1D6B6C390066679C /* RMLabel.swift */,
+				4470AC011D6CA97500E120E0 /* RMTableView.swift */,
+				4470AC041D6CA9A900E120E0 /* RMTableViewCell.swift */,
 			);
 			name = Subclasses;
 			sourceTree = "<group>";
@@ -170,7 +213,7 @@
 		449D992F1D6B74C20066679C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				44091AB01D6B64D50010EE4B /* Main.storyboard */,
+				44B5E33E1D6CEB9700747174 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -183,10 +226,19 @@
 			name = Subclasses;
 			sourceTree = "<group>";
 		};
+		44CA79051D6CEA1A00C028F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44CA79061D6CEA4400C028F2 /* Films.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		ACD178773D8F9507D2B91AC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2F0DC2FF30AA34C31E29E585 /* Pods_RemTV.framework */,
+				1AF7AA212B8A28AC95E4B0DA /* Pods_RemMe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,8 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44091AB71D6B64D50010EE4B /* LaunchScreen.storyboard in Resources */,
+				44B5E33F1D6CEB9700747174 /* Main.storyboard in Resources */,
 				44091AB41D6B64D50010EE4B /* Assets.xcassets in Resources */,
-				44091AB21D6B64D50010EE4B /* Main.storyboard in Resources */,
+				44CA79071D6CEA4400C028F2 /* Films.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemTV/Pods-RemTV-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemMe/Pods-RemMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE3E033062EE6216B61CF0B4 /* [CP] Copy Pods Resources */ = {
@@ -303,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemTV/Pods-RemTV-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemMe/Pods-RemMe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -313,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4470AC051D6CA9A900E120E0 /* RMTableViewCell.swift in Sources */,
 				449D991C1D6B68510066679C /* RMViewController.swift in Sources */,
 				449D99231D6B68EF0066679C /* RMColor.swift in Sources */,
 				44091AAF1D6B64D50010EE4B /* RMMainViewController.swift in Sources */,
@@ -327,20 +381,14 @@
 				448B44211D6C8CDA001E2168 /* RMSong.swift in Sources */,
 				449D992B1D6B6C040066679C /* RMCollectionView.swift in Sources */,
 				449D99271D6B6A630066679C /* RMCollectionViewCell.swift in Sources */,
+				4470AC021D6CA97500E120E0 /* RMTableView.swift in Sources */,
+				4470ABFE1D6CA92600E120E0 /* RMFilmsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		44091AB01D6B64D50010EE4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44091AB11D6B64D50010EE4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44091AB51D6B64D50010EE4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,11 +487,11 @@
 		};
 		44091ABC1D6B64D50010EE4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9578B7673DE64E1E0AFF085D /* Pods-RemTV.debug.xcconfig */;
+			baseConfigurationReference = 3C75AB77F482F750DCB4F3A5 /* Pods-RemMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "$(SRCROOT)/RemMe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RemMe/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.marsportillo.RemMe;
 				PRODUCT_NAME = RemMe;
@@ -452,11 +500,11 @@
 		};
 		44091ABD1D6B64D50010EE4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2B9636E8207D048CCD382D5 /* Pods-RemTV.release.xcconfig */;
+			baseConfigurationReference = C0CC7634770F17D9C332FE08 /* Pods-RemMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "$(SRCROOT)/RemMe/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RemMe/Misc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.marsportillo.RemMe;
 				PRODUCT_NAME = RemMe;

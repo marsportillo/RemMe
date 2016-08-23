@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-RemTV.xcscheme</key>
+		<key>Pods-RemMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +32,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>36F5001CD30CA6E30B631DC0BFEA7237</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4FDBB1CEA946A6ADAEAECD970DC94E01</key>
+		<key>1A1992E065D675A957C2F045FC82CDD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5DF1F186A0F01FAFF5D1717AEBBFE44</key>
+		<key>C5EE3A4C9D9B0D42DD4E2CD240425E4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D21947BEF3170BEDF36351EF79C4D968</key>
 		<dict>
 			<key>primary</key>
 			<true/>
