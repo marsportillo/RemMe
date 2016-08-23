@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iho-g0-q17">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CM7-HV-n6w">
+            <objects>
+                <navigationController id="iho-g0-q17" customClass="RMNavigationController" customModule="RemMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Yr-jT-bPT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4du-th-twQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVn-Fh-ndr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533" y="339"/>
+        </scene>
+        <!--RemMe-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RMMainViewController" customModule="RemMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Yr-t5-aSZ" customClass="RMCollectionView" customModule="RemMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="smM-SW-oXB">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="center" reuseIdentifier="mainCell" id="x5s-F0-WWZ" customClass="RMMainCollectionViewCell" customModule="RemMe" customModuleProvider="target">
+                                        <rect key="frame" x="4.5" y="0.0" width="591" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="591" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M7g-s4-1ae" customClass="RMImageView" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="591" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nL-Ub-fPN" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="122" width="575" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="5AD-bQ-ulw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5k-Ni-nyy" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="77" width="575" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="Bbi-RO-5Ux"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="7nL-Ub-fPN" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leadingMargin" id="2FR-HL-Ehg"/>
+                                            <constraint firstItem="7nL-Ub-fPN" firstAttribute="trailing" secondItem="x5s-F0-WWZ" secondAttribute="trailingMargin" id="7TD-UB-mzz"/>
+                                            <constraint firstItem="7nL-Ub-fPN" firstAttribute="top" secondItem="V5k-Ni-nyy" secondAttribute="bottom" id="Feg-yb-hgg"/>
+                                            <constraint firstItem="M7g-s4-1ae" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leading" id="PUG-fg-2Ai"/>
+                                            <constraint firstItem="V5k-Ni-nyy" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leadingMargin" id="PtS-93-5zN"/>
+                                            <constraint firstItem="V5k-Ni-nyy" firstAttribute="centerX" secondItem="x5s-F0-WWZ" secondAttribute="centerX" id="X1b-b9-KMO"/>
+                                            <constraint firstAttribute="bottom" secondItem="M7g-s4-1ae" secondAttribute="bottom" id="aqG-O0-08X"/>
+                                            <constraint firstItem="V5k-Ni-nyy" firstAttribute="centerY" secondItem="x5s-F0-WWZ" secondAttribute="centerY" id="emw-bE-gad"/>
+                                            <constraint firstItem="V5k-Ni-nyy" firstAttribute="trailing" secondItem="x5s-F0-WWZ" secondAttribute="trailingMargin" id="h7l-xv-Ma1"/>
+                                            <constraint firstItem="M7g-s4-1ae" firstAttribute="top" secondItem="x5s-F0-WWZ" secondAttribute="top" id="kqW-Eb-KGx"/>
+                                            <constraint firstAttribute="trailing" secondItem="M7g-s4-1ae" secondAttribute="trailing" id="svq-Ih-r1J"/>
+                                        </constraints>
+                                        <size key="customSize" width="591" height="200"/>
+                                        <connections>
+                                            <outlet property="backgroundCategoryImage" destination="M7g-s4-1ae" id="b8P-vg-HEM"/>
+                                            <outlet property="categoryNameLabel" destination="V5k-Ni-nyy" id="UWY-D8-KFI"/>
+                                            <outlet property="numOfItemsLabel" destination="7nL-Ub-fPN" id="LnK-gZ-T68"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="LE2-vE-WAb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aUK-mf-KK1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Yr-t5-aSZ" secondAttribute="bottom" id="Nk2-sT-YZs"/>
+                            <constraint firstItem="2Yr-t5-aSZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SpX-tn-mwa"/>
+                            <constraint firstAttribute="trailing" secondItem="2Yr-t5-aSZ" secondAttribute="trailing" id="ZbN-Nm-u8c"/>
+                            <constraint firstItem="2Yr-t5-aSZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jEr-mB-OMt"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="RemMe" id="uS4-Od-iyp"/>
+                    <connections>
+                        <outlet property="categoriesCollectionView" destination="2Yr-t5-aSZ" id="Ryc-sX-JrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="339"/>
+        </scene>
+    </scenes>
+</document>
