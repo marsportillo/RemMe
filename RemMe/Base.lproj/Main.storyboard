@@ -44,7 +44,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="center" reuseIdentifier="mainCell" id="x5s-F0-WWZ" customClass="RMMainCollectionViewCell" customModule="RemMe" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.45000000000000001" contentMode="scaleAspectFill" reuseIdentifier="mainCell" id="x5s-F0-WWZ" customClass="RMMainCollectionViewCell" customModule="RemMe" customModuleProvider="target">
                                         <rect key="frame" x="4.5" y="0.0" width="591" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -54,12 +54,16 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M7g-s4-1ae" customClass="RMImageView" customModule="RemMe" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="591" height="200"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Em5-tn-NHj">
+                                                    <rect key="frame" x="-0.5" y="0.0" width="591" height="200"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nL-Ub-fPN" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="122" width="575" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="5AD-bQ-ulw"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -68,7 +72,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="Bbi-RO-5Ux"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -79,9 +83,13 @@
                                         <constraints>
                                             <constraint firstItem="7nL-Ub-fPN" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leadingMargin" id="2FR-HL-Ehg"/>
                                             <constraint firstItem="7nL-Ub-fPN" firstAttribute="trailing" secondItem="x5s-F0-WWZ" secondAttribute="trailingMargin" id="7TD-UB-mzz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Em5-tn-NHj" secondAttribute="trailing" id="DnG-OY-oiU"/>
                                             <constraint firstItem="7nL-Ub-fPN" firstAttribute="top" secondItem="V5k-Ni-nyy" secondAttribute="bottom" id="Feg-yb-hgg"/>
+                                            <constraint firstItem="Em5-tn-NHj" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leading" id="H06-hZ-da7"/>
                                             <constraint firstItem="M7g-s4-1ae" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leading" id="PUG-fg-2Ai"/>
                                             <constraint firstItem="V5k-Ni-nyy" firstAttribute="leading" secondItem="x5s-F0-WWZ" secondAttribute="leadingMargin" id="PtS-93-5zN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Em5-tn-NHj" secondAttribute="bottom" id="SMk-7U-FqN"/>
+                                            <constraint firstItem="Em5-tn-NHj" firstAttribute="top" secondItem="x5s-F0-WWZ" secondAttribute="top" id="UiL-Di-Q2g"/>
                                             <constraint firstItem="V5k-Ni-nyy" firstAttribute="centerX" secondItem="x5s-F0-WWZ" secondAttribute="centerX" id="X1b-b9-KMO"/>
                                             <constraint firstAttribute="bottom" secondItem="M7g-s4-1ae" secondAttribute="bottom" id="aqG-O0-08X"/>
                                             <constraint firstItem="V5k-Ni-nyy" firstAttribute="centerY" secondItem="x5s-F0-WWZ" secondAttribute="centerY" id="emw-bE-gad"/>

@@ -12,6 +12,10 @@
 		44091AB21D6B64D50010EE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB01D6B64D50010EE4B /* Main.storyboard */; };
 		44091AB41D6B64D50010EE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB31D6B64D50010EE4B /* Assets.xcassets */; };
 		44091AB71D6B64D50010EE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB51D6B64D50010EE4B /* LaunchScreen.storyboard */; };
+		448B441F1D6C8BA2001E2168 /* RMTVSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */; };
+		448B44211D6C8CDA001E2168 /* RMSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B44201D6C8CDA001E2168 /* RMSong.swift */; };
+		448B44231D6C8D06001E2168 /* RMFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B44221D6C8D06001E2168 /* RMFilm.swift */; };
+		448B44251D6C8D1E001E2168 /* RMBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B44241D6C8D1E001E2168 /* RMBook.swift */; };
 		449D991C1D6B68510066679C /* RMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D991B1D6B68510066679C /* RMViewController.swift */; };
 		449D991E1D6B68640066679C /* RMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D991D1D6B68640066679C /* RMNavigationController.swift */; };
 		449D99231D6B68EF0066679C /* RMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D99221D6B68EF0066679C /* RMColor.swift */; };
@@ -32,6 +36,10 @@
 		44091AB31D6B64D50010EE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44091AB61D6B64D50010EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44091AB81D6B64D50010EE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTVSerie.swift; sourceTree = "<group>"; };
+		448B44201D6C8CDA001E2168 /* RMSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMSong.swift; sourceTree = "<group>"; };
+		448B44221D6C8D06001E2168 /* RMFilm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMFilm.swift; sourceTree = "<group>"; };
+		448B44241D6C8D1E001E2168 /* RMBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMBook.swift; sourceTree = "<group>"; };
 		449D991B1D6B68510066679C /* RMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMViewController.swift; sourceTree = "<group>"; };
 		449D991D1D6B68640066679C /* RMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMNavigationController.swift; sourceTree = "<group>"; };
 		449D99211D6B68CA0066679C /* RMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMColor.h; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 		44091AAB1D6B64D50010EE4B /* RemMe */ = {
 			isa = PBXGroup;
 			children = (
+				448B441D1D6C8B86001E2168 /* Model */,
 				449D99181D6B682C0066679C /* Subclasses */,
 				449D99171D6B67FE0066679C /* Main */,
 				449D99201D6B68940066679C /* Misc */,
@@ -95,6 +104,17 @@
 			path = RemMe;
 			sourceTree = "<group>";
 			usesTabs = 1;
+		};
+		448B441D1D6C8B86001E2168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				448B441E1D6C8BA2001E2168 /* RMTVSerie.swift */,
+				448B44201D6C8CDA001E2168 /* RMSong.swift */,
+				448B44221D6C8D06001E2168 /* RMFilm.swift */,
+				448B44241D6C8D1E001E2168 /* RMBook.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
 		};
 		449D99171D6B67FE0066679C /* Main */ = {
 			isa = PBXGroup;
@@ -296,11 +316,15 @@
 				449D991C1D6B68510066679C /* RMViewController.swift in Sources */,
 				449D99231D6B68EF0066679C /* RMColor.swift in Sources */,
 				44091AAF1D6B64D50010EE4B /* RMMainViewController.swift in Sources */,
+				448B44251D6C8D1E001E2168 /* RMBook.swift in Sources */,
 				449D991E1D6B68640066679C /* RMNavigationController.swift in Sources */,
 				449D99291D6B6A720066679C /* RMMainCollectionViewCell.swift in Sources */,
 				44091AAD1D6B64D50010EE4B /* AppDelegate.swift in Sources */,
 				449D99251D6B69840066679C /* RMImageView.swift in Sources */,
+				448B441F1D6C8BA2001E2168 /* RMTVSerie.swift in Sources */,
 				449D992D1D6B6C390066679C /* RMLabel.swift in Sources */,
+				448B44231D6C8D06001E2168 /* RMFilm.swift in Sources */,
+				448B44211D6C8CDA001E2168 /* RMSong.swift in Sources */,
 				449D992B1D6B6C040066679C /* RMCollectionView.swift in Sources */,
 				449D99271D6B6A630066679C /* RMCollectionViewCell.swift in Sources */,
 			);
