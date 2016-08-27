@@ -29,6 +29,7 @@
 		449D992D1D6B6C390066679C /* RMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D992C1D6B6C390066679C /* RMLabel.swift */; };
 		44B5E33F1D6CEB9700747174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B5E33E1D6CEB9700747174 /* Main.storyboard */; };
 		44CA79071D6CEA4400C028F2 /* Films.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA79061D6CEA4400C028F2 /* Films.storyboard */; };
+		44FF44F91D72202300F23395 /* RMLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF44F81D72202300F23395 /* RMLocalStorage.swift */; };
 		77B1995522A04A5C5A9E4CE8 /* Pods_RemTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0DC2FF30AA34C31E29E585 /* Pods_RemTV.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		449D992C1D6B6C390066679C /* RMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMLabel.swift; path = Subclasses/RMLabel.swift; sourceTree = "<group>"; };
 		44B5E33E1D6CEB9700747174 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Main/Views/Main.storyboard; sourceTree = "<group>"; };
 		44CA79061D6CEA4400C028F2 /* Films.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Films.storyboard; path = Films/View/Films.storyboard; sourceTree = "<group>"; };
+		44FF44F81D72202300F23395 /* RMLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMLocalStorage.swift; path = Storage/RMLocalStorage.swift; sourceTree = "<group>"; };
 		9578B7673DE64E1E0AFF085D /* Pods-RemTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemTV/Pods-RemTV.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CC7634770F17D9C332FE08 /* Pods-RemMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemMe/Pods-RemMe.release.xcconfig"; sourceTree = "<group>"; };
 		C2B9636E8207D048CCD382D5 /* Pods-RemTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemTV/Pods-RemTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		44091AAB1D6B64D50010EE4B /* RemMe */ = {
 			isa = PBXGroup;
 			children = (
+				44FF44F71D72200B00F23395 /* Storage */,
 				448B441D1D6C8B86001E2168 /* Model */,
 				449D99181D6B682C0066679C /* Subclasses */,
 				449D99171D6B67FE0066679C /* Main */,
@@ -232,6 +235,14 @@
 				44CA79061D6CEA4400C028F2 /* Films.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		44FF44F71D72200B00F23395 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				44FF44F81D72202300F23395 /* RMLocalStorage.swift */,
+			);
+			name = Storage;
 			sourceTree = "<group>";
 		};
 		ACD178773D8F9507D2B91AC1 /* Frameworks */ = {
@@ -374,6 +385,7 @@
 				449D991E1D6B68640066679C /* RMNavigationController.swift in Sources */,
 				449D99291D6B6A720066679C /* RMMainCollectionViewCell.swift in Sources */,
 				44091AAD1D6B64D50010EE4B /* AppDelegate.swift in Sources */,
+				44FF44F91D72202300F23395 /* RMLocalStorage.swift in Sources */,
 				449D99251D6B69840066679C /* RMImageView.swift in Sources */,
 				448B441F1D6C8BA2001E2168 /* RMTVSerie.swift in Sources */,
 				449D992D1D6B6C390066679C /* RMLabel.swift in Sources */,
