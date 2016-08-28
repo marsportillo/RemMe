@@ -3,44 +3,61 @@
 //  RemTV
 //
 //  Created by marco sportillo on 22/08/16.
-//  Copyright © 2016 IQUII. All rights reserved.
+//  Copyright © 2016 msportillo.me. All rights reserved.
 //
 
 import UIKit
 
-class RMMainViewController: RMViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class RMMainViewController: RMViewController {
 
     @IBOutlet weak var categoriesCollectionView: RMCollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-//		RMLocalStorage.sharedInstance.saveSong("Born to run", artist: "Bruce Springsteen")
-//		var songs = RMLocalStorage.sharedInstance.getSongs()
-//	
-//		for song in songs {
-//			print(song.title)
-//			RMLocalStorage.sharedInstance.deleteSong(song)
-//		}
-//
-//
-//		songs = RMLocalStorage.sharedInstance.getSongs()
-//
-//		print(songs)
 	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
-	func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-	{
+}
+
+
+extension RMMainViewController:UICollectionViewDelegate {
+	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+
+		
+		switch(indexPath.item) {
+		case 0:
+			print("IndexPath: ", indexPath.item)
+			
+		case 1:
+			let storyboard = UIStoryboard(name: "Films", bundle: nil)
+			let vc = storyboard.instantiateViewControllerWithIdentifier("filmsVC") as! RMFilmsViewController
+			self.navigationController?.pushViewController(vc, animated: true)
+			print("IndexPath: ", indexPath.item)
+		
+		case 2:
+			print("IndexPath: ", indexPath.item)
+			
+		case 3:
+			print("IndexPath: ", indexPath.item)
+			
+			
+		default:
+			print("IndexPath: ", indexPath.item)
+		}
+	}
+}
+
+extension RMMainViewController:UICollectionViewDataSource {
+	func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return 4;
 	}
+	
 	func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 		
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("mainCell", forIndexPath: indexPath) as! RMMainCollectionViewCell
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("mainCell", forIndexPath: indexPath) as! RMMainCollectionViewCell
 		
 		switch (indexPath.item) {
 		case 0:
@@ -73,10 +90,17 @@ class RMMainViewController: RMViewController,UICollectionViewDelegate, UICollect
 	func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 		return CGSizeMake(self.view.frame.width, 200)
 	}
-	
-	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-		
-	}
+
 }
 
-
+extension RMMainViewController {
+	func testData() {
+		RMLocalStorage.sharedInstance.saveSong("Born to run", artist: "Bruce Springsteen")
+		var songs = RMLocalStorage.sharedInstance.getSongs()
+		for song in songs {
+			print(song.title)
+			RMLocalStorage.sharedInstance.deleteSong(song)
+		}
+		songs = RMLocalStorage.sharedInstance.getSongs()
+	}
+}

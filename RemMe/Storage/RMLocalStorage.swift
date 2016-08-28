@@ -3,7 +3,7 @@
 //  RemMe
 //
 //  Created by marco sportillo on 27/08/16.
-//  Copyright © 2016 IQUII. All rights reserved.
+//  Copyright © 2016 msportillo.me. All rights reserved.
 //
 
 import Foundation
@@ -88,6 +88,7 @@ class RMLocalStorage: NSObject {
 			manager.delete(filmToDelete)
 		}
 	}
+
 
 	//MARK: TVSerie methods
 	internal func saveTVSerie(title: String, picture: NSData, ratings: Double) {

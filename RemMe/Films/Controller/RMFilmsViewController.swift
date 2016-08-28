@@ -3,15 +3,37 @@
 //  RemMe
 //
 //  Created by marco sportillo on 23/08/16.
-//  Copyright © 2016 IQUII. All rights reserved.
+//  Copyright © 2016 msportillo.me. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class RMFilmsViewController: RMViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.navigationController?.navigationItem.title = "Films"
+		self.title = "Films"
 
+	}
+}
+
+extension RMFilmsViewController:UITableViewDelegate {
+	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		print("IndexPath: ", indexPath.item)
+	}
+}
+
+extension RMFilmsViewController:UITableViewDataSource {
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 4;
+	}
+	
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		let row = tableView.dequeueReusableCellWithIdentifier("filmsCell", forIndexPath: indexPath) as!RMFilmsTableViewCell
+		
+		row.titleLabel.text = "Film"
+		
+		row.ratingsLabel.text = "Rating: 4.5/5"
+		
+		return row
 	}
 }
