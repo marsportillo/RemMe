@@ -12,9 +12,9 @@ class RMFilmsViewController: RMViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.title = "Films"
-
 	}
 }
+
 
 extension RMFilmsViewController:UITableViewDelegate {
 	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -22,16 +22,16 @@ extension RMFilmsViewController:UITableViewDelegate {
 	}
 }
 
+
 extension RMFilmsViewController:UITableViewDataSource {
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 4;
+		return 4
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let row = tableView.dequeueReusableCellWithIdentifier("filmsCell", forIndexPath: indexPath) as!RMFilmsTableViewCell
 		
 		row.titleLabel.text = "Film"
-		
 		row.ratingsLabel.text = "Rating: 4.5/5"
 		
 		return row
