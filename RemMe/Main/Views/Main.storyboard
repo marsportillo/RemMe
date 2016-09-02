@@ -25,7 +25,6 @@
         <!--RemMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="RMMainViewController" customModule="RemMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -126,6 +125,7 @@
                         <outlet property="categoriesCollectionView" destination="2Yr-t5-aSZ" id="Ryc-sX-JrO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="243" y="339"/>
         </scene>

@@ -17,8 +17,8 @@ class RMFilmsViewController: RMViewController {
 
 
 extension RMFilmsViewController:UITableViewDelegate {
-	func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-		print("IndexPath: ", indexPath.item)
+	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		print("IndexPath: ", indexPath.row)
 	}
 }
 

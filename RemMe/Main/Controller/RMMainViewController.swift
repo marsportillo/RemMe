@@ -30,6 +30,9 @@ extension RMMainViewController:UICollectionViewDelegate {
 		switch(indexPath.item) {
 		case 0:
 			print("IndexPath: ", indexPath.item)
+			let storyboard = UIStoryboard(name: "TVSeries", bundle: nil)
+			let vc = storyboard.instantiateViewControllerWithIdentifier("tvSeriesVC") as! RMTVSeriesViewController
+			self.navigationController?.pushViewController(vc, animated: true)
 			
 		case 1:
 			let storyboard = UIStoryboard(name: "Films", bundle: nil)
@@ -38,11 +41,15 @@ extension RMMainViewController:UICollectionViewDelegate {
 			print("IndexPath: ", indexPath.item)
 		
 		case 2:
+			let storyboard = UIStoryboard(name: "Books", bundle: nil)
+			let vc = storyboard.instantiateViewControllerWithIdentifier("booksVC") as! RMBooksViewController
+			self.navigationController?.pushViewController(vc, animated: true)
 			print("IndexPath: ", indexPath.item)
-			
 		case 3:
+			let storyboard = UIStoryboard(name: "Songs", bundle: nil)
+			let vc = storyboard.instantiateViewControllerWithIdentifier("songsVC") as! RMSongsViewController
+			self.navigationController?.pushViewController(vc, animated: true)
 			print("IndexPath: ", indexPath.item)
-			
 			
 		default:
 			print("IndexPath: ", indexPath.item)

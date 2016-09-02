@@ -12,6 +12,15 @@
 		44091AAF1D6B64D50010EE4B /* RMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44091AAE1D6B64D50010EE4B /* RMMainViewController.swift */; };
 		44091AB41D6B64D50010EE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB31D6B64D50010EE4B /* Assets.xcassets */; };
 		44091AB71D6B64D50010EE4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44091AB51D6B64D50010EE4B /* LaunchScreen.storyboard */; };
+		446F350C1D79D3E8002929C7 /* TVSeries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446F350B1D79D3E8002929C7 /* TVSeries.storyboard */; };
+		446F350E1D79D450002929C7 /* RMTVSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F350D1D79D450002929C7 /* RMTVSeriesViewController.swift */; };
+		446F35101D79D473002929C7 /* RMTVSerieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F350F1D79D473002929C7 /* RMTVSerieTableViewCell.swift */; };
+		446F351B1D79D686002929C7 /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446F351A1D79D686002929C7 /* Books.storyboard */; };
+		446F351D1D79D6B4002929C7 /* RMBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F351C1D79D6B4002929C7 /* RMBooksViewController.swift */; };
+		446F351F1D79D72A002929C7 /* RMBooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F351E1D79D72A002929C7 /* RMBooksTableViewCell.swift */; };
+		446F35211D79D86E002929C7 /* Songs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446F35201D79D86E002929C7 /* Songs.storyboard */; };
+		446F35251D79D8BB002929C7 /* RMSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F35241D79D8BB002929C7 /* RMSongsViewController.swift */; };
+		446F35271D79D8EF002929C7 /* RMSongsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F35261D79D8EF002929C7 /* RMSongsTableViewCell.swift */; };
 		4470ABFE1D6CA92600E120E0 /* RMFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470ABFD1D6CA92600E120E0 /* RMFilmsViewController.swift */; };
 		4470AC021D6CA97500E120E0 /* RMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470AC011D6CA97500E120E0 /* RMTableView.swift */; };
 		4470AC051D6CA9A900E120E0 /* RMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470AC041D6CA9A900E120E0 /* RMTableViewCell.swift */; };
@@ -44,6 +53,15 @@
 		44091AB31D6B64D50010EE4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
 		44091AB61D6B64D50010EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44091AB81D6B64D50010EE4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Misc/Info.plist; sourceTree = "<group>"; };
+		446F350B1D79D3E8002929C7 /* TVSeries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TVSeries.storyboard; path = TVSeries/TVSeries.storyboard; sourceTree = "<group>"; };
+		446F350D1D79D450002929C7 /* RMTVSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTVSeriesViewController.swift; path = TVSeries/RMTVSeriesViewController.swift; sourceTree = "<group>"; };
+		446F350F1D79D473002929C7 /* RMTVSerieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTVSerieTableViewCell.swift; sourceTree = "<group>"; };
+		446F351A1D79D686002929C7 /* Books.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Books.storyboard; path = Books/Books.storyboard; sourceTree = "<group>"; };
+		446F351C1D79D6B4002929C7 /* RMBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMBooksViewController.swift; sourceTree = "<group>"; };
+		446F351E1D79D72A002929C7 /* RMBooksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMBooksTableViewCell.swift; sourceTree = "<group>"; };
+		446F35201D79D86E002929C7 /* Songs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Songs.storyboard; path = Songs/View/Songs.storyboard; sourceTree = "<group>"; };
+		446F35241D79D8BB002929C7 /* RMSongsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMSongsViewController.swift; path = Songs/Controller/RMSongsViewController.swift; sourceTree = "<group>"; };
+		446F35261D79D8EF002929C7 /* RMSongsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMSongsTableViewCell.swift; path = Songs/Subclasses/RMSongsTableViewCell.swift; sourceTree = "<group>"; };
 		4470ABFD1D6CA92600E120E0 /* RMFilmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMFilmsViewController.swift; path = Films/Controller/RMFilmsViewController.swift; sourceTree = "<group>"; };
 		4470AC011D6CA97500E120E0 /* RMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTableView.swift; path = Subclasses/RMTableView.swift; sourceTree = "<group>"; };
 		4470AC041D6CA9A900E120E0 /* RMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMTableViewCell.swift; path = Subclasses/RMTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,13 +136,118 @@
 				448B441D1D6C8B86001E2168 /* Model */,
 				449D99181D6B682C0066679C /* Subclasses */,
 				449D99171D6B67FE0066679C /* Main */,
+				446F35081D79D396002929C7 /* TV Series */,
 				4470ABFF1D6CA93100E120E0 /* Films */,
+				446F350A1D79D3AD002929C7 /* Books */,
+				446F35091D79D3A4002929C7 /* Songs */,
 				449D99201D6B68940066679C /* Misc */,
 				449D991F1D6B688B0066679C /* Assets */,
 			);
 			path = RemMe;
 			sourceTree = "<group>";
 			usesTabs = 1;
+		};
+		446F35081D79D396002929C7 /* TV Series */ = {
+			isa = PBXGroup;
+			children = (
+				446F35111D79D4D4002929C7 /* View */,
+				446F35121D79D4D9002929C7 /* Controller */,
+				446F35131D79D4DF002929C7 /* Subclasses */,
+			);
+			name = "TV Series";
+			sourceTree = "<group>";
+		};
+		446F35091D79D3A4002929C7 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				446F35161D79D547002929C7 /* Subclasses */,
+				446F35151D79D542002929C7 /* Controller */,
+				446F35141D79D53C002929C7 /* View */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+		446F350A1D79D3AD002929C7 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				446F35191D79D556002929C7 /* View */,
+				446F35181D79D551002929C7 /* Controller */,
+				446F35171D79D54C002929C7 /* Subclasses */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		446F35111D79D4D4002929C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				446F350B1D79D3E8002929C7 /* TVSeries.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		446F35121D79D4D9002929C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				446F350D1D79D450002929C7 /* RMTVSeriesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		446F35131D79D4DF002929C7 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				446F350F1D79D473002929C7 /* RMTVSerieTableViewCell.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		446F35141D79D53C002929C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				446F35201D79D86E002929C7 /* Songs.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		446F35151D79D542002929C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				446F35241D79D8BB002929C7 /* RMSongsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		446F35161D79D547002929C7 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				446F35261D79D8EF002929C7 /* RMSongsTableViewCell.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		446F35171D79D54C002929C7 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				446F351E1D79D72A002929C7 /* RMBooksTableViewCell.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		446F35181D79D551002929C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				446F351C1D79D6B4002929C7 /* RMBooksViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		446F35191D79D556002929C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				446F351A1D79D686002929C7 /* Books.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
 		};
 		4470ABFF1D6CA93100E120E0 /* Films */ = {
 			isa = PBXGroup;
@@ -318,6 +441,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446F35211D79D86E002929C7 /* Songs.storyboard in Resources */,
+				446F350C1D79D3E8002929C7 /* TVSeries.storyboard in Resources */,
+				446F351B1D79D686002929C7 /* Books.storyboard in Resources */,
 				44091AB71D6B64D50010EE4B /* LaunchScreen.storyboard in Resources */,
 				44B5E33F1D6CEB9700747174 /* Main.storyboard in Resources */,
 				44091AB41D6B64D50010EE4B /* Assets.xcassets in Resources */,
@@ -385,7 +511,9 @@
 				449D99231D6B68EF0066679C /* RMColor.swift in Sources */,
 				44091AAF1D6B64D50010EE4B /* RMMainViewController.swift in Sources */,
 				448B44251D6C8D1E001E2168 /* RMBook.swift in Sources */,
+				446F35271D79D8EF002929C7 /* RMSongsTableViewCell.swift in Sources */,
 				449D991E1D6B68640066679C /* RMNavigationController.swift in Sources */,
+				446F35101D79D473002929C7 /* RMTVSerieTableViewCell.swift in Sources */,
 				449D99291D6B6A720066679C /* RMMainCollectionViewCell.swift in Sources */,
 				44091AAD1D6B64D50010EE4B /* AppDelegate.swift in Sources */,
 				44FF44F91D72202300F23395 /* RMLocalStorage.swift in Sources */,
@@ -393,11 +521,15 @@
 				448B441F1D6C8BA2001E2168 /* RMTVSerie.swift in Sources */,
 				449D992D1D6B6C390066679C /* RMLabel.swift in Sources */,
 				448B44231D6C8D06001E2168 /* RMFilm.swift in Sources */,
+				446F35251D79D8BB002929C7 /* RMSongsViewController.swift in Sources */,
 				448B44211D6C8CDA001E2168 /* RMSong.swift in Sources */,
 				449D992B1D6B6C040066679C /* RMCollectionView.swift in Sources */,
 				44E77C911D72C09F00730236 /* RMFilmsTableViewCell.swift in Sources */,
+				446F350E1D79D450002929C7 /* RMTVSeriesViewController.swift in Sources */,
 				449D99271D6B6A630066679C /* RMCollectionViewCell.swift in Sources */,
 				4470AC021D6CA97500E120E0 /* RMTableView.swift in Sources */,
+				446F351F1D79D72A002929C7 /* RMBooksTableViewCell.swift in Sources */,
+				446F351D1D79D6B4002929C7 /* RMBooksViewController.swift in Sources */,
 				4470ABFE1D6CA92600E120E0 /* RMFilmsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

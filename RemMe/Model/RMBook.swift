@@ -11,4 +11,5 @@ import RealmSwift
 class RMBook: Object {
 	dynamic var title = ""
 	dynamic var author: String? = ""
+	dynamic var ratings: Double = 0.0
 }

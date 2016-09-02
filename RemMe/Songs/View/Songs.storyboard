@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--RemMe-->
+        <scene sceneID="2Nk-3M-Bx5">
+            <objects>
+                <viewController storyboardIdentifier="songsVC" id="ZM6-GZ-jlL" customClass="RMSongsViewController" customModule="RemMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q1k-Ns-VUI"/>
+                        <viewControllerLayoutGuide type="bottom" id="9vN-wl-6Sa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yFs-Ql-RdF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="re2-sZ-0Pl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songsCell" rowHeight="164" id="Un0-R4-JNo" customClass="RMSongsTableViewCell" customModule="RemMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="164"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Un0-R4-JNo" id="AJM-Ll-XDW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FBd-nU-cFg" customClass="RMImageView" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="105" height="148"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="RHv-iy-BWx"/>
+                                                        <constraint firstAttribute="height" constant="148" id="jdY-OH-gHG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zb-nS-fNx" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="121" y="8" width="471" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EF4-dk-VDd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbS-2H-OpD" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="121" y="46" width="471" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="2B7-wd-IIn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4W-C6-lVh" customClass="RMLabel" customModule="RemMe" customModuleProvider="target">
+                                                    <rect key="frame" x="121" y="125" width="471" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="c2u-jL-HEj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vbS-2H-OpD" firstAttribute="leading" secondItem="FBd-nU-cFg" secondAttribute="trailing" constant="8" id="Y6K-0Q-Qha"/>
+                                                <constraint firstItem="B4W-C6-lVh" firstAttribute="leading" secondItem="FBd-nU-cFg" secondAttribute="trailing" constant="8" id="Z5v-7g-36V"/>
+                                                <constraint firstItem="FBd-nU-cFg" firstAttribute="leading" secondItem="AJM-Ll-XDW" secondAttribute="leadingMargin" id="ZhL-xQ-2ay"/>
+                                                <constraint firstItem="6zb-nS-fNx" firstAttribute="trailing" secondItem="AJM-Ll-XDW" secondAttribute="trailingMargin" id="bzv-1l-E7Z"/>
+                                                <constraint firstItem="FBd-nU-cFg" firstAttribute="top" secondItem="AJM-Ll-XDW" secondAttribute="topMargin" id="fJh-fC-9Uu"/>
+                                                <constraint firstItem="6zb-nS-fNx" firstAttribute="leading" secondItem="FBd-nU-cFg" secondAttribute="trailing" constant="8" id="fwz-Dz-f4H"/>
+                                                <constraint firstItem="vbS-2H-OpD" firstAttribute="top" secondItem="6zb-nS-fNx" secondAttribute="bottom" constant="8" id="kFY-5E-jdL"/>
+                                                <constraint firstItem="B4W-C6-lVh" firstAttribute="trailing" secondItem="AJM-Ll-XDW" secondAttribute="trailingMargin" id="mZi-PX-qlq"/>
+                                                <constraint firstAttribute="trailing" secondItem="vbS-2H-OpD" secondAttribute="trailing" constant="8" id="sti-QZ-RUi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="B4W-C6-lVh" secondAttribute="bottom" constant="0.5" id="xcC-qu-Uok"/>
+                                                <constraint firstItem="6zb-nS-fNx" firstAttribute="top" secondItem="AJM-Ll-XDW" secondAttribute="topMargin" id="zL3-Qr-Iek"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumPicture" destination="FBd-nU-cFg" id="5Ob-XA-7xM"/>
+                                            <outlet property="authorLabel" destination="vbS-2H-OpD" id="49i-ZH-GUA"/>
+                                            <outlet property="ratingsLabel" destination="B4W-C6-lVh" id="dJO-GD-FcW"/>
+                                            <outlet property="titleLabel" destination="6zb-nS-fNx" id="hUU-lJ-uIO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZM6-GZ-jlL" id="cEC-wW-LJ1"/>
+                                    <outlet property="delegate" destination="ZM6-GZ-jlL" id="C9j-jN-RCD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="re2-sZ-0Pl" firstAttribute="leading" secondItem="yFs-Ql-RdF" secondAttribute="leading" id="83t-ak-Gkb"/>
+                            <constraint firstItem="re2-sZ-0Pl" firstAttribute="top" secondItem="yFs-Ql-RdF" secondAttribute="top" id="D6g-2z-cUi"/>
+                            <constraint firstItem="9vN-wl-6Sa" firstAttribute="top" secondItem="re2-sZ-0Pl" secondAttribute="bottom" id="cP4-dw-Y2W"/>
+                            <constraint firstAttribute="trailing" secondItem="re2-sZ-0Pl" secondAttribute="trailing" id="ilp-ve-1fT"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="RemMe" id="eIl-S5-ML6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhk-He-xhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="252"/>
+        </scene>
+    </scenes>
+</document>
