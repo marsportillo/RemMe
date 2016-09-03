@@ -12,6 +12,7 @@ class RMFilmsViewController: RMViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.title = "Films"
+		self.setBackButtonItemInNavBar()
 	}
 }
 

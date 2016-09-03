@@ -14,6 +14,7 @@ class RMTVSeriesViewController: RMViewController {
         super.viewDidLoad()
 
 		self.title = "TV Series"
+		self.setBackButtonItemInNavBar()
         // Do any additional setup after loading the view.
     }
 

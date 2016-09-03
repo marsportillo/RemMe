@@ -12,7 +12,7 @@ class RMSongsViewController: RMViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		self.setBackButtonItemInNavBar()
         // Do any additional setup after loading the view.
     }
 
