@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 let richBlack = UIColor(netHex: 0x040F16) // NavBar BG
-let blueSapphire = UIColor(netHex: 0x005E7C)
+let blueSapphire = UIColor(netHex: 0x005E7C) //NavBar FG
 let bondiBlue = UIColor(netHex: 0x0094C6)
 let maastritchtBlue = UIColor(netHex: 0x001242)
 let beauBlue = UIColor(netHex: 0xC5D1EB)
